@@ -18,7 +18,6 @@ canvas {
 
 body {
   overflow-x: hidden;
-
 }
 
 body::-webkit-scrollbar {
@@ -39,6 +38,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
+  margin-left: -10px;
   max-width: 100%;
   width: 100%;
   color: white;
@@ -219,7 +219,7 @@ blockquote p {
   filter: blur(5px);
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1200px) {
   .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
   }
