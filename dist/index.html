@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./assets/index.29f19599.css">
   </head>
   <body>
-    <canvas id="bg"></canvas>
-    <main>
+    <canvas id="bg">
+  </canvas>
+    <main style="margin-left: -10px;">
 
       <header>
         <h1 class="word animate-charcter"></h1>
@@ -126,7 +127,6 @@
 
       <div class="h-4 w-full absolute bottom-0 left-0 rgb-shadow"></div>
     </main>
-    
     <script>
       var words = ["Hi I'am Jensen",'a web coder.'],
 part,
@@ -136,7 +136,7 @@ len = words.length,
 forwards = true,
 skip_count = 0,
 skip_delay = 15,
-speed = 70;
+speed = 170;
 var wordflick = function () {
 setInterval(function () {
 if (forwards) {
