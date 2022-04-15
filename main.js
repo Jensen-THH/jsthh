@@ -42,12 +42,12 @@ function addStar(){
   scene.add(star);
 }
 Array(200).fill().forEach(addStar);
-const spaceTexture = new THREE.TextureLoader().load('https://www.baodanh.ga/images/bg.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/Jensen-THH/jsthh/main/bg.jpg');
 // https://raw.githubusercontent.com/fireship-io/threejs-scroll-animation-demo/main/space.jpg
 scene.background = spaceTexture;
 
 // jensen
-const jensenTextures = new THREE.TextureLoader().load('js.jpg');
+const jensenTextures = new THREE.TextureLoader().load('https://raw.githubusercontent.com/Jensen-THH/jsthh/main/js.jpg');
 // const jensenTextures = new THREE.TextureLoader().load('https://raw.githubusercontent.com/fireship-io/threejs-scroll-animation-demo/main/space.jpg');
 const jensen = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jensenTextures }));
 // const jensen = new THREE.Mesh(new THREE.SphereGeometry(3,102,32), new THREE.MeshBasicMaterial({ map: jensenTextures }));
