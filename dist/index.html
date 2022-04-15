@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jensen IT</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" crossorigin src="/assets/index.965887aa.js"></script>
+    <link rel="stylesheet" href="/assets/index.29f19599.css">
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <main>
+
+      <header>
+        <h1 class="word animate-charcter"></h1>
+      
+        <!-- <h1 class="animate-charcter ">Jensen</h1> -->
+        <div class="welcome">
+          <div class="waviy">
+          <span style="--i:1">🚀</span>
+          <span style="--i:2">W</span>
+          <span style="--i:3">E</span>
+          <span style="--i:4">L</span>
+          <span style="--i:5">C</span>
+          <span style="--i:6">O</span>
+          <span style="--i:7">M</span>
+          <span style="--i:8">E</span>
+          <span style="--i:8"> </span>
+          <span style="--i:9">T</span>
+          <span style="--i:10">O</span>
+          <span style="--i:11"> </span>
+          <span style="--i:12">M</span>
+          <span style="--i:13">Y</span>
+          <span style="--i:14"> </span>
+          <span style="--i:15">W</span>
+          <span style="--i:16">E</span>
+          <span style="--i:17">B</span>
+          <span style="--i:18">S</span>
+          <span style="--i:19">I</span>
+          <span style="--i:20">T</span>
+          <span style="--i:21">E</span>
+       
+         </div>
+        </div>
+      </header>
+
+
+      <blockquote>
+        <p>I like making stuff and putting it on the internet</p>
+      </blockquote>
+     
+      
+      <section>
+        <h2>🎓 What did I learn? 🧠</h2>
+        <p>
+          Javascript, Python, MySQL, Mongo DB
+        </p>
+
+        <p>
+          HTML5, CSS, Bootstrap, TailwindCSS
+        </p>
+
+        <p>
+          Vue Native, Node.js, Angular
+        </p>
+        <p>
+          Git, Firebase
+        </p>
+
+      </section>
+
+      <section class="light">
+        <h2>👩🏽‍🚀 Projects</h2>
+       
+        
+        
+        <p>
+          Jshop: Website shopping using Angular 12, Nodejs and MongoDB
+        </p>
+        <p>
+          Jensen Store: App mobile shopping using Vue Native
+        </p>
+        <p>
+          Reacing Game: App mobile using python & pyqt5
+        </p>
+        <p>
+          JsChat: App Desktop using Electronjs, Angular 11 and FireBase
+        </p>
+
+        <h2>🏆 Accomplishments</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <blockquote2>
+        <p>Tôi thích xe hỏng, Đơn giản là bởi vì nó không có ích</p>
+      </blockquote2>
+
+      <section class="left">
+        <h2>🌮 Work History</h2>
+        
+        <h3>McDonalds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>Burger King</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>Taco Bell</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>Thanks for watching!</p>
+      </blockquote>
+
+
+      <div class="h-4 w-full absolute bottom-0 left-0 rgb-shadow"></div>
+    </main>
+    
+    <script>
+      var words = ["Hi I'am Jensen",'a web coder.'],
+part,
+i = 0,
+offset = 0,
+len = words.length,
+forwards = true,
+skip_count = 0,
+skip_delay = 15,
+speed = 70;
+var wordflick = function () {
+setInterval(function () {
+if (forwards) {
+  if (offset >= words[i].length) {
+    ++skip_count;
+    if (skip_count == skip_delay) {
+      forwards = false;
+      skip_count = 0;
+    }
+  }
+}
+else {
+  if (offset == 0) {
+    forwards = true;
+    i++;
+    offset = 0;
+    if (i >= len) {
+      i = 0;
+    }
+  }
+}
+part = words[i].substr(0, offset);
+if (skip_count == 0) {
+  if (forwards) {
+    offset++;
+  }
+  else {
+    offset--;
+  }
+}
+$('.word').text(part);
+},speed);
+};
+
+$(document).ready(function () {
+wordflick();
+});
+    </script>
+  </body>
+</html>
